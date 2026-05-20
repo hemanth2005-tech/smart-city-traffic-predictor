@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bc92021b21035d279466d6b35886c3b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bc92021b21035d279466d6b35886c3b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bc92021b21035d279466d6b35886c3b9 = L.map(
+                "map_bc92021b21035d279466d6b35886c3b9",
+                {
+                    center: [12.9716, 77.5946],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c77a953920674ad5b64e8baf6a8cd2a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9c77a953920674ad5b64e8baf6a8cd2a.addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var marker_3702a6947fa10001fc2dadb49c1f4985 = L.marker(
+                [12.9174, 77.6229],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_6a76d20b9b91a8b47fd20e628f0d7aa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89bc4cf5be42ad5eb0c108a78399c670 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b2f0e296c4382dec2a79b6152520b775 = $(`<div id="html_b2f0e296c4382dec2a79b6152520b775" style="width: 100.0%; height: 100.0%;"><b>Silk Board Junction</b><br>Traffic: 17027 vehicles/hr</div>`)[0];
+                popup_89bc4cf5be42ad5eb0c108a78399c670.setContent(html_b2f0e296c4382dec2a79b6152520b775);
+            
+        
+
+        marker_3702a6947fa10001fc2dadb49c1f4985.bindPopup(popup_89bc4cf5be42ad5eb0c108a78399c670)
+        ;
+
+        
+    
+    
+            marker_3702a6947fa10001fc2dadb49c1f4985.bindTooltip(
+                `<div>
+                     Silk Board Junction
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3702a6947fa10001fc2dadb49c1f4985.setIcon(icon_6a76d20b9b91a8b47fd20e628f0d7aa0);
+            
+    
+            var marker_3da1a5d653423235ef68f487187af3da = L.marker(
+                [13.0, 77.6963],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_633b9bf946d6762f122c5e2fd1073b0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_864f14e5e0f74490c981f4822849e52c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_374235b79e1556a9ea4d8c63cfbeb74a = $(`<div id="html_374235b79e1556a9ea4d8c63cfbeb74a" style="width: 100.0%; height: 100.0%;"><b>KR Puram Bridge</b><br>Traffic: 15504 vehicles/hr</div>`)[0];
+                popup_864f14e5e0f74490c981f4822849e52c.setContent(html_374235b79e1556a9ea4d8c63cfbeb74a);
+            
+        
+
+        marker_3da1a5d653423235ef68f487187af3da.bindPopup(popup_864f14e5e0f74490c981f4822849e52c)
+        ;
+
+        
+    
+    
+            marker_3da1a5d653423235ef68f487187af3da.bindTooltip(
+                `<div>
+                     KR Puram Bridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3da1a5d653423235ef68f487187af3da.setIcon(icon_633b9bf946d6762f122c5e2fd1073b0e);
+            
+    
+            var marker_f7281ff41e65b50ac2c162a17dcd70be = L.marker(
+                [13.0355, 77.5974],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_f34c532adffa2ba53c08a0fe317282ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0b5f8a5e94cb03c1752ee5f7c0702fc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_eb676d99352dfb39f55ecbb9766e3021 = $(`<div id="html_eb676d99352dfb39f55ecbb9766e3021" style="width: 100.0%; height: 100.0%;"><b>Hebbal Flyover</b><br>Traffic: 14152 vehicles/hr</div>`)[0];
+                popup_c0b5f8a5e94cb03c1752ee5f7c0702fc.setContent(html_eb676d99352dfb39f55ecbb9766e3021);
+            
+        
+
+        marker_f7281ff41e65b50ac2c162a17dcd70be.bindPopup(popup_c0b5f8a5e94cb03c1752ee5f7c0702fc)
+        ;
+
+        
+    
+    
+            marker_f7281ff41e65b50ac2c162a17dcd70be.bindTooltip(
+                `<div>
+                     Hebbal Flyover
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f7281ff41e65b50ac2c162a17dcd70be.setIcon(icon_f34c532adffa2ba53c08a0fe317282ca);
+            
+    
+            var marker_3a50677cedebbdd1fdf3cb5da10ada4d = L.marker(
+                [12.9698, 77.7499],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_b134f4b8eb0c0dba9eb848825f977744 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63fe792e16097de19490d655e54c0d0d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_21552689976d9e3626f7a4e7384ca70e = $(`<div id="html_21552689976d9e3626f7a4e7384ca70e" style="width: 100.0%; height: 100.0%;"><b>Whitefield Main Road</b><br>Traffic: 12960 vehicles/hr</div>`)[0];
+                popup_63fe792e16097de19490d655e54c0d0d.setContent(html_21552689976d9e3626f7a4e7384ca70e);
+            
+        
+
+        marker_3a50677cedebbdd1fdf3cb5da10ada4d.bindPopup(popup_63fe792e16097de19490d655e54c0d0d)
+        ;
+
+        
+    
+    
+            marker_3a50677cedebbdd1fdf3cb5da10ada4d.bindTooltip(
+                `<div>
+                     Whitefield Main Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a50677cedebbdd1fdf3cb5da10ada4d.setIcon(icon_b134f4b8eb0c0dba9eb848825f977744);
+            
+    
+            var marker_73c083cb980282288e102e3c0b256df8 = L.marker(
+                [12.9352, 77.6245],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_31bd220d3281f19addfa7537c4623e1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71ae1b550d0b2e4f66bbed32f601c45a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4a54a4b8b00836f618f5d3c1a7f1716d = $(`<div id="html_4a54a4b8b00836f618f5d3c1a7f1716d" style="width: 100.0%; height: 100.0%;"><b>Koramangala 5th Block</b><br>Traffic: 12523 vehicles/hr</div>`)[0];
+                popup_71ae1b550d0b2e4f66bbed32f601c45a.setContent(html_4a54a4b8b00836f618f5d3c1a7f1716d);
+            
+        
+
+        marker_73c083cb980282288e102e3c0b256df8.bindPopup(popup_71ae1b550d0b2e4f66bbed32f601c45a)
+        ;
+
+        
+    
+    
+            marker_73c083cb980282288e102e3c0b256df8.bindTooltip(
+                `<div>
+                     Koramangala 5th Block
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_73c083cb980282288e102e3c0b256df8.setIcon(icon_31bd220d3281f19addfa7537c4623e1c);
+            
+    
+            var marker_3815bdce822863ebee7cdb0479f485d5 = L.marker(
+                [12.8399, 77.677],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_b55e7adb9d2b93246a80c84c6db15ba3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "warning-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9fbaee196e2da2086f32393d38ca089e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ecb7e170dc41dbfc648450674bbed72f = $(`<div id="html_ecb7e170dc41dbfc648450674bbed72f" style="width: 100.0%; height: 100.0%;"><b>Electronic City Toll</b><br>Traffic: 12363 vehicles/hr</div>`)[0];
+                popup_9fbaee196e2da2086f32393d38ca089e.setContent(html_ecb7e170dc41dbfc648450674bbed72f);
+            
+        
+
+        marker_3815bdce822863ebee7cdb0479f485d5.bindPopup(popup_9fbaee196e2da2086f32393d38ca089e)
+        ;
+
+        
+    
+    
+            marker_3815bdce822863ebee7cdb0479f485d5.bindTooltip(
+                `<div>
+                     Electronic City Toll
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3815bdce822863ebee7cdb0479f485d5.setIcon(icon_b55e7adb9d2b93246a80c84c6db15ba3);
+            
+    
+            var marker_8cedca4a57e9193cb656838f373c2952 = L.marker(
+                [12.9591, 77.6974],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_ffa4f1efa1138fe37c97b03f72d18287 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_844183710e7718af244d5020186eebac = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6e50eff9d93ee41e5f89e4163eac8f18 = $(`<div id="html_6e50eff9d93ee41e5f89e4163eac8f18" style="width: 100.0%; height: 100.0%;"><b>Marathahalli Bridge</b><br>Traffic: 11938 vehicles/hr</div>`)[0];
+                popup_844183710e7718af244d5020186eebac.setContent(html_6e50eff9d93ee41e5f89e4163eac8f18);
+            
+        
+
+        marker_8cedca4a57e9193cb656838f373c2952.bindPopup(popup_844183710e7718af244d5020186eebac)
+        ;
+
+        
+    
+    
+            marker_8cedca4a57e9193cb656838f373c2952.bindTooltip(
+                `<div>
+                     Marathahalli Bridge
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8cedca4a57e9193cb656838f373c2952.setIcon(icon_ffa4f1efa1138fe37c97b03f72d18287);
+            
+    
+            var marker_6523124d2aba596e39235a52489f9713 = L.marker(
+                [12.9757, 77.6011],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_52685a0cca9f9408d36f308b1c766086 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_700b02b1d66a24fc5b47f74aa3e0c887 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_72dc8bb7795fd58e119f84dab48e540b = $(`<div id="html_72dc8bb7795fd58e119f84dab48e540b" style="width: 100.0%; height: 100.0%;"><b>MG Road</b><br>Traffic: 11204 vehicles/hr</div>`)[0];
+                popup_700b02b1d66a24fc5b47f74aa3e0c887.setContent(html_72dc8bb7795fd58e119f84dab48e540b);
+            
+        
+
+        marker_6523124d2aba596e39235a52489f9713.bindPopup(popup_700b02b1d66a24fc5b47f74aa3e0c887)
+        ;
+
+        
+    
+    
+            marker_6523124d2aba596e39235a52489f9713.bindTooltip(
+                `<div>
+                     MG Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6523124d2aba596e39235a52489f9713.setIcon(icon_52685a0cca9f9408d36f308b1c766086);
+            
+    
+            var marker_35c0fbe61dee3667acbef7b668a8b88d = L.marker(
+                [12.9698, 77.7499],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_edc4660e308a0aab46d022b8adba3b89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62a1ad4e170c289a2fcc1d181b68e1fa = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4d1fae3ee80221f8b1d349d141f96aca = $(`<div id="html_4d1fae3ee80221f8b1d349d141f96aca" style="width: 100.0%; height: 100.0%;"><b>Outer Ring Road</b><br>Traffic: 10739 vehicles/hr</div>`)[0];
+                popup_62a1ad4e170c289a2fcc1d181b68e1fa.setContent(html_4d1fae3ee80221f8b1d349d141f96aca);
+            
+        
+
+        marker_35c0fbe61dee3667acbef7b668a8b88d.bindPopup(popup_62a1ad4e170c289a2fcc1d181b68e1fa)
+        ;
+
+        
+    
+    
+            marker_35c0fbe61dee3667acbef7b668a8b88d.bindTooltip(
+                `<div>
+                     Outer Ring Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_35c0fbe61dee3667acbef7b668a8b88d.setIcon(icon_edc4660e308a0aab46d022b8adba3b89);
+            
+    
+            var marker_4d763e304a0560fb205271c2c088cc82 = L.marker(
+                [12.8933, 77.5975],
+                {
+}
+            ).addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+    
+            var icon_d79747ad781ba5e8497fb264391bc4cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_384fd13abf1a2c75932b60d3a84b743a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2f0d33862861b20701fa8a2f0a4d1b59 = $(`<div id="html_2f0d33862861b20701fa8a2f0a4d1b59" style="width: 100.0%; height: 100.0%;"><b>Bannerghatta Road</b><br>Traffic: 10074 vehicles/hr</div>`)[0];
+                popup_384fd13abf1a2c75932b60d3a84b743a.setContent(html_2f0d33862861b20701fa8a2f0a4d1b59);
+            
+        
+
+        marker_4d763e304a0560fb205271c2c088cc82.bindPopup(popup_384fd13abf1a2c75932b60d3a84b743a)
+        ;
+
+        
+    
+    
+            marker_4d763e304a0560fb205271c2c088cc82.bindTooltip(
+                `<div>
+                     Bannerghatta Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d763e304a0560fb205271c2c088cc82.setIcon(icon_d79747ad781ba5e8497fb264391bc4cb);
+            
+    
+            var heat_map_4d0572a580e39bd71965faa2a5104e0c = L.heatLayer(
+                [[12.9174, 77.6229, 0.8513696166666667], [13.0, 77.6963, 0.7751925666666666], [13.0355, 77.5974, 0.7075807523809524], [12.9698, 77.7499, 0.647982325], [12.9352, 77.6245, 0.626151857142857], [12.8399, 77.677, 0.6181696416666665], [12.9591, 77.6974, 0.5969095833333333], [12.9757, 77.6011, 0.5601905166666669], [12.9698, 77.7499, 0.536926], [12.8933, 77.5975, 0.5037138547619048]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 18,
+  "radius": 40,
+  "blur": 25,
+}
+            );
+        
+    
+            heat_map_4d0572a580e39bd71965faa2a5104e0c.addTo(map_bc92021b21035d279466d6b35886c3b9);
+        
+</script>
+</html>
