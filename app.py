@@ -125,7 +125,7 @@ with col1:
             popup=folium.Popup(f"<b>{loc}</b><br>🚗 {pred:.0f} vehicles/hr", max_width=200),
             tooltip=loc
         ).add_to(m)
-    st_folium(m, width=600, height=450)
+    st_folium(m, width=600, height=450, returned_objects=[])
 
 with col2:
     st.subheader("📊 Junction Rankings")
